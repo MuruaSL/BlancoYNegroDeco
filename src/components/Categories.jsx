@@ -13,9 +13,9 @@ const Categories = () => {
             <MenuItem className="menuItemCss">Frazadas</MenuItem>
             <MenuItem className="menuItemCss">Sabanas</MenuItem>
             <MenuItem className="menuItemCss">Acolchados</MenuItem>
+            <MenuItem className="menuItemCss">Ideas para tu hogar</MenuItem>
             <MenuItem className="menuItemCss">Quienes somos</MenuItem>
             <MenuItem className="menuItemCss">Que hacemos</MenuItem>
-            <MenuItem className="menuItemCss">Ideas para tu hogar</MenuItem>
             <MenuItem className="menuItemCss">Contactanos</MenuItem>
           </MenuList>
         </Menu>
