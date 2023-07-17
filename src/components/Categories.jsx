@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconButton,Menu,MenuButton,MenuList,MenuItem,Button } from '@chakra-ui/react';
+import { IconButton,Menu,MenuButton,MenuList,MenuItem} from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 const Categories = () => {
     return (
