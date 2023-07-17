@@ -3,12 +3,12 @@ import { Menu,MenuButton,MenuList,MenuItem,Button } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 const Categories = () => {
     return (
-      <>
+    <>
         <Menu>
-          <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
             Menu
-          </MenuButton>
-          <MenuList>
+        </MenuButton>
+        <MenuList>
             <MenuItem className="menuItemCss">Mantas</MenuItem>
             <MenuItem className="menuItemCss">Frazadas</MenuItem>
             <MenuItem className="menuItemCss">Sabanas</MenuItem>
@@ -17,9 +17,9 @@ const Categories = () => {
             <MenuItem className="menuItemCss">Quienes somos</MenuItem>
             <MenuItem className="menuItemCss">Que hacemos</MenuItem>
             <MenuItem className="menuItemCss">Contactanos</MenuItem>
-          </MenuList>
+        </MenuList>
         </Menu>
-      </>
+    </>
     );
     }
 
