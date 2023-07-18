@@ -62,11 +62,17 @@
   width: 350px;
   background-color: bisque;
   height: 100vh;
-  position:absolute;
-  float:right;
+  position:fixed;
+  top: 0;
+  right: 0;
   padding: 10px;
   text-align: center;
   box-sizing: border-box;
+}
+.closeIcon{
+  float: right;
+  margin: 10px;
+  
 }
 .sideCartTitle{
   font-family: 'Times New Roman', Times, serif;
