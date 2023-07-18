@@ -1,3 +1,5 @@
+/* ----------------NavBar Component---------------- */
+
 .header{
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -8,34 +10,32 @@
   align-items: center;
 
 }
-
-.categoryNav{
-  color: black;
-}
-
 .headerTitle{
   font-size: 2rem;
   text-align: center;
 }
-.bag-icon{
-  width: 60px;
-  padding-left: 15px;
-}
-.num-backg{
-  color: white;
-}
 
+/* ----------------CartWidget Component ----------------*/
 .disp-flex-bag{
   display: flex;
     flex-direction: row;
     align-items: center;
 }
+.num-backg{
+  color: white;
+}
+.bag-icon{
+  width: 60px;
+  padding-left: 15px;
+}
 
+/* ----------------Categories Component ----------------*/
 .menuItemCss {
   color: black !important;
   background-color: white !important;
 }
 
+/* ----------------ItemListCpntainer Component ----------------*/
 .greetingBanner{
   background-color: black;
   color: white;
@@ -52,4 +52,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+
+/* ----------------LateralCart Component ----------------*/
+
+.AsideCss{
+
+  width: 350px;
+  background-color: bisque;
+  height: 100vh;
+  position:absolute;
+  float:right;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* ----------------Footer Component---------------- */
+
+.footerbar{
+  background-color: black;
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.leyendFooter{
+  font-family:'Times New Roman', Times, serif ;
+}
+.urlFooter{
+  font-family:'Times New Roman', Times, serif ;
+
 }
