@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Item from "./Item";
 
-const ItemListContainer = ({greeting}) => {
-    return (
-        <div className='greetingBanner'>{greeting}</div>
-    )
+const ItemListContainer = ({ productos }) => {
+if (productos.length === 0) {
+    return <p>Ha ocurrido un error inesperado</p>;
 }
 
-export default ItemListContainer
+return (
+    <div className="grid-Items">
+    {productos.map((producto) => (
+        <Item key={producto.id} producto={producto} />
+    ))}
+    </div>
+);
+};
+
+export default ItemListContainer;

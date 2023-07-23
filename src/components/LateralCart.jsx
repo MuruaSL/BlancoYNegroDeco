@@ -16,6 +16,8 @@ return (
                 <button className="lateralButton">Finalizar compra</button>
             </div>
         </aside>
+
+        
     </>
     );
 }

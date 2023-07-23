@@ -53,8 +53,22 @@
   align-items: center;
   justify-content: center;
 }
+.grid-Items{
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    align-content: stretch;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* ----------------Item.jsx Component ----------------*/
 
-
+.item_margins{
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
 
 /* ----------------LateralCart Component ----------------*/
 
