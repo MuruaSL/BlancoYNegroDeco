@@ -8,6 +8,7 @@ return (
     <Grid templateColumns='1fr 1fr 15fr 2fr'  className="header">
 
         <GridItem><a href="../../index.html"><img
+        className="NavbarIcon"
         src="./src/assets/60x60.png"
         alt="iconBlancoYnegroDeco"
         /></a></GridItem>

@@ -14,6 +14,19 @@
   font-size: 2rem;
   text-align: center;
 }
+@media screen  and (max-width:425px){
+  
+  .headerTitle{
+    font-size: 18px}
+  
+}
+
+@media screen  and (max-width:768px){
+  .NavbarIcon{
+    display: none;
+  }
+}
+
 
 /* ----------------CartWidget Component ----------------*/
 .disp-flex-bag{
@@ -21,21 +34,53 @@
     flex-direction: row;
     align-items: center;
 }
-.num-backg{
+.cart-num{
   color: white;
 }
 .bag-icon{
   width: 60px;
   padding-left: 15px;
 }
+@media screen  and (max-width:425px){
+  
+  .disp-flex-bag{
+    display: none;
+  }
+}
 
+/*------------------LowResCartButton comp-----------------*/
+
+.lowRescartbuttondiv{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+.disp-none-cart{
+  color: white;
+  padding: 10px;
+  border-width: 1px;
+  width: 100%;
+
+}
+@media screen  and (min-width:425px){
+  
+  .disp-none-cart {
+    display: none;
+  }
+  .lowRescartbuttondiv{
+    display: none;
+  }
+}
 /* ----------------Categories Component ----------------*/
 .menuItemCss {
   color: black !important;
   background-color: white !important;
 }
-
-/* ----------------ItemListCpntainer Component ----------------*/
+/*------------------------BANNER Component------------------------*/
 .greetingBanner{
   background-color: black;
   color: white;
@@ -53,8 +98,15 @@
   align-items: center;
   justify-content: center;
 }
+@media screen  and (max-width:320px){
+  .greetingBanner{
+    font-size: 15px;
+  }
+
+}
+/* ----------------ItemListContainer Component ----------------*/
 .grid-Items{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     display: grid;
     justify-content: space-between;
     align-items: center;
@@ -63,6 +115,20 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
+@media screen  and (max-width:768px){
+  
+  .grid-Items{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen  and (max-width:425px){
+  
+  .grid-Items{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* ----------------Item.jsx Component ----------------*/
 
 .item_margins{
@@ -70,6 +136,46 @@
   margin-top: 10px;
 }
 
+.itemresponsive{
+  width: 20vw;
+}
+.itemNameDiv{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.itemDescriptDiv{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.cardstyles{
+  background-color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.492);
+  font-size: small;
+}
+@media screen  and (max-width:768px){
+  
+  .itemresponsive{
+    width: 40vw;
+  }
+}
+@media screen  and (max-width:425px){
+  
+  .itemresponsive{
+    width: 70vw;
+  }
+}
 /* ----------------LateralCart Component ----------------*/
 
 .AsideCss{

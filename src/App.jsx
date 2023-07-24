@@ -4,7 +4,7 @@ import ItemListContainer from './components/ItemListContainer';
 import LateralCart from './components/LateralCart';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
-
+import LowResCartButton from './components/LowResCartButton';
   const productos = [
     {
       id: "articuloA",
@@ -64,8 +64,9 @@ const App = () => {
   return (
     <>
       <NavBar />
-      <Banner/>
-      <ItemListContainer  productos={productos}  />
+      <LowResCartButton />
+      <Banner />
+      <ItemListContainer productos={productos} />
       {/* <LateralCart /> */}
       <Footer />
     </>
