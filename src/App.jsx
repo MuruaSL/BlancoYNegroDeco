@@ -9,6 +9,7 @@ import LowResCartButton from './components/LowResCartButton';
     {
       id: "articuloA",
       name: "nombreA",
+      image: "src/assets/articulos/1.png",
       description: "descripcion",
       precio: 999,
       stock: 4
@@ -16,6 +17,7 @@ import LowResCartButton from './components/LowResCartButton';
     {
       id: "articuloB",
       name: "nombreB",
+      image: "src/assets/articulos/7.png",
       description: "descripcion",
       precio: 777,
       stock: 6
@@ -23,6 +25,7 @@ import LowResCartButton from './components/LowResCartButton';
     {
       id: "articuloC",
       name: "nombreC",
+      image: "src/assets/articulos/2.png",
       description: "descripcion",
       precio: 888,
       stock: 5
@@ -30,6 +33,7 @@ import LowResCartButton from './components/LowResCartButton';
     {
       id: "articuloD",
       name: "nombreB",
+      image: "src/assets/articulos/6.png",
       description: "descripcion",
       precio: 777,
       stock: 6
@@ -37,6 +41,7 @@ import LowResCartButton from './components/LowResCartButton';
     {
       id: "articuloE",
       name: "nombreA",
+      image: "src/assets/articulos/4.png",
       description: "descripcion",
       precio: 999,
       stock: 4
@@ -44,6 +49,7 @@ import LowResCartButton from './components/LowResCartButton';
     {
       id: "articuloF",
       name: "nombreA",
+      image: "src/assets/articulos/5.png",
       description: "descripcion",
       precio: 999,
       stock: 4
@@ -51,6 +57,47 @@ import LowResCartButton from './components/LowResCartButton';
     {
       id: "articuloG",
       name: "nombreB",
+      image: "src/assets/articulos/3.png",
+      description: "descripcion",
+      precio: 777,
+      stock: 6
+    },
+    {
+      id: "articuloH",
+      name: "nombreB",
+      image: "src/assets/articulos/8.png",
+      description: "descripcion",
+      precio: 777,
+      stock: 6
+    },
+    {
+      id: "articuloI",
+      name: "nombreB",
+      image: "src/assets/articulos/9.png",
+      description: "descripcion",
+      precio: 777,
+      stock: 6
+    },
+    {
+      id: "articuloJ",
+      name: "nombreB",
+      image: "src/assets/articulos/10.png",
+      description: "descripcion",
+      precio: 777,
+      stock: 6
+    },
+    {
+      id: "articuloK",
+      name: "nombreB",
+      image: "src/assets/articulos/11.png",
+      description: "descripcion",
+      precio: 777,
+      stock: 6
+    },
+    {
+      id: "articuloL",
+      name: "nombreB",
+      image: "src/assets/articulos/12.png",
       description: "descripcion",
       precio: 777,
       stock: 6
