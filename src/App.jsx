@@ -8,7 +8,7 @@ import LowResCartButton from './components/LowResCartButton';
   const productos = [
     {
       id: "articuloA",
-      name: "nombreA",
+      name: "Pantuflas",
       image: "src/assets/articulos/1.png",
       description: "descripcion",
       precio: 999,
@@ -16,15 +16,15 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloB",
-      name: "nombreB",
+      name: "Manta corderito ",
       image: "src/assets/articulos/7.png",
-      description: "descripcion",
+      description: "Mantas de corderito doble faz ",
       precio: 777,
       stock: 6
     },
     {
       id: "articuloC",
-      name: "nombreC",
+      name: "Alfombra rectangulares",
       image: "src/assets/articulos/2.png",
       description: "descripcion",
       precio: 888,
@@ -32,7 +32,7 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloD",
-      name: "nombreB",
+      name: "Alfombra redonda",
       image: "src/assets/articulos/6.png",
       description: "descripcion",
       precio: 777,
@@ -40,7 +40,7 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloE",
-      name: "nombreA",
+      name: "Alfombra de telar",
       image: "src/assets/articulos/4.png",
       description: "descripcion",
       precio: 999,
@@ -48,7 +48,7 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloF",
-      name: "nombreA",
+      name: "Alfombra artesanal ",
       image: "src/assets/articulos/5.png",
       description: "descripcion",
       precio: 999,
@@ -56,7 +56,7 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloG",
-      name: "nombreB",
+      name: "Alfombra de telar mediana",
       image: "src/assets/articulos/3.png",
       description: "descripcion",
       precio: 777,
@@ -64,7 +64,7 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloH",
-      name: "nombreB",
+      name: "Manta corderito gris",
       image: "src/assets/articulos/8.png",
       description: "descripcion",
       precio: 777,
@@ -72,15 +72,15 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloI",
-      name: "nombreB",
+      name: "Toalla y toallon",
       image: "src/assets/articulos/9.png",
-      description: "descripcion",
+      description: " Juego de toalla y toallon de 500gr",
       precio: 777,
       stock: 6
     },
     {
       id: "articuloJ",
-      name: "nombreB",
+      name: "Cubrecama Flannel",
       image: "src/assets/articulos/10.png",
       description: "descripcion",
       precio: 777,
@@ -88,7 +88,7 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloK",
-      name: "nombreB",
+      name: "Almohadones",
       image: "src/assets/articulos/11.png",
       description: "descripcion",
       precio: 777,
@@ -96,7 +96,7 @@ import LowResCartButton from './components/LowResCartButton';
     },
     {
       id: "articuloL",
-      name: "nombreB",
+      name: "Mantas rusticas",
       image: "src/assets/articulos/12.png",
       description: "descripcion",
       precio: 777,
