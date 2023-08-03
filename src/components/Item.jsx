@@ -1,8 +1,8 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 const Item = ({ producto }) => {
-  const { name, description, precio,stock, image} = producto;
+  const {id, name, image} = producto;
 
   return (
     <>
@@ -10,23 +10,12 @@ const Item = ({ producto }) => {
         <div>
           <h2 className="itemNameDiv">{name}</h2>
         </div>
-        <img
-          className="itemresponsive"
-          src={image}
-          alt="FOTULi ALT"
-        />
-        <div className="descript_priceDiv">
-          <p className="itemDescriptDiv">{description}</p>
-          <p>Precio: ${precio}</p>
+        <img className="itemresponsive" src={image} alt="FOTULi ALT" />
+          <Link to={`/item/${id}`}>
+        <div className="seeMoreButtonDiv">
+          <button className="seeMoreButton">Conocé más</button>
         </div>
-        <div className="moreOrLessItemsDiv">
-          <button className="addorremovequantity">-</button>
-          <div>{1}</div>
-          <button className="addorremovequantity">+</button>
-        </div>
-        <div>
-          <button className="addtocardbutton">Agregar al carrito</button>
-        </div>
+        </Link>
       </div>
     </>
   );

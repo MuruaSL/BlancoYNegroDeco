@@ -1,14 +1,19 @@
+html body{
+  background-color: #DCCFB1;
+}
+
+
 /* ----------------NavBar Component---------------- */
 
 .header{
-  background-color: rgb(0, 0, 0);
+  background-color:#311700;
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
-  color: rgb(255, 255, 255);
+  color:white;
   align-items: center;
-
+  font-family:cursive;
 }
 .headerTitle{
   font-size: 2rem;
@@ -82,14 +87,15 @@
 }
 /*------------------------BANNER Component------------------------*/
 .greetingBanner{
-  background-color: black;
+  background-color: #B38A56;
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family:cursive;
   font-size:x-large;
   text-align: center;
-  border-radius: 10px;
-  border-color: white;
-  border-width: 1px;
+  /* border-radius: 10px;
+  border-color: white; */
+  /* border-width: 1px; */
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
@@ -141,7 +147,6 @@
   
 }
 .itemNameDiv{
-  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   height: 30px;
   font-family: 'Times New Roman', Times, serif;
@@ -151,13 +156,12 @@
   align-items: center;
 
 }
-.itemDescriptDiv{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 15px;
-  background-color: rgb(255, 255, 255);
-}
+
 .cardstyles{
-  background-color: whitesmoke;
+  background-color: #C7A681;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: white;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -171,7 +175,58 @@
   margin-bottom: 15px;
 
 }
+.seeMoreButtonDiv{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.seeMoreButton{
+    transition: all 0.2s ease, visibility 0s;
+    border-width: 1px;
+    border-color: black;
 
+    box-shadow: 2.83px 2.83px 0 #c19361;
+    background: #B38A56;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    min-height: 10px;
+    min-width: 10px;
+    padding: 0;
+    touch-action: manipulation;
+    width: 60%;
+    font-family:cursive;
+    font-size: 15px;
+    font-weight: 500;
+}
+.seeMoreButton:hover{
+  box-shadow: 3px 3px 0 #5B3509;
+}
+
+@media screen  and (max-width:768px){
+  
+  .itemresponsive{
+    width: 40vw;
+  }
+}
+@media screen  and (max-width:425px){
+  
+  .itemresponsive{
+    width: 70vw;
+  }
+}
+
+/*------------------------- ItemDetailContainer.jsx--------------------------------*/
+.itemDetailContainerDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+
+/*------------------------- ItemDetail.jsx--------------------------------*/
 .addorremovequantity{
   height: 30px;
   width: 20%;
@@ -195,18 +250,9 @@
   margin-bottom: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-@media screen  and (max-width:768px){
-  
-  .itemresponsive{
-    width: 40vw;
-  }
-}
-@media screen  and (max-width:425px){
-  
-  .itemresponsive{
-    width: 70vw;
-  }
-}
+/*------------------------- ItemCount.jsx--------------------------------*/
+
+
 /* ----------------LateralCart Component ----------------*/
 
 .AsideCss{

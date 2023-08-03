@@ -1,7 +1,11 @@
 import React from "react";
 import Item from "./Item";
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = ({ productos }) => {
+const ItemListContainer = ({productos}) => {
+
+const {category} = useParams()
+
 if (productos.length === 0) {
     return <p>Ha ocurrido un error inesperado</p>;
 }
