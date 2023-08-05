@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <>
             <footer className='footerbar'>
-            <p className='leyendFooter'>All Rights Reserved ™ 
-                <a className='urlFooter' href="https://github.com/MuruaSL">
+                <p >All Rights Reserved ™ 
+                <a href="https://github.com/MuruaSL">
                     Sergio Leonardo Murua
                 </a>
             </p>

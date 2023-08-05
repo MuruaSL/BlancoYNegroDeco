@@ -10,6 +10,9 @@ const Categories = () => {
             Menu
             </MenuButton>
             <MenuList>
+                <Link to={`/category/${0}`}>
+                <MenuItem className="menuItemCss">Todos</MenuItem>
+                </Link>
                 <Link to={`/category/${1}`}>
                 <MenuItem className="menuItemCss">Mantas</MenuItem>
                 </Link>
@@ -20,8 +23,18 @@ const Categories = () => {
                 <MenuItem className="menuItemCss">Sabanas</MenuItem>
                 </Link>
                 <Link to={`/category/${4}`}>
-                <MenuItem className="menuItemCss">Acolchados</MenuItem>
+                <MenuItem className="menuItemCss">Acolchados, cubrecamas y Almohadones</MenuItem>
                 </Link>
+                <Link to={`/category/${5}`}>
+                <MenuItem className="menuItemCss">Alfombras</MenuItem>
+                </Link>
+                <Link to={`/category/${6}`}>
+                <MenuItem className="menuItemCss">Toallas</MenuItem>
+                </Link>
+                <Link to={`/category/${7}`}>
+                <MenuItem className="menuItemCss">Otros</MenuItem>
+                </Link>
+
                 
             </MenuList>
         </Menu>

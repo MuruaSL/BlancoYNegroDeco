@@ -135,7 +135,39 @@ html body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+.NoProductsMessageDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.NoProductsMessage{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #c9b195;
+  border-width: 1px;
+  border-style: dotted;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius:20px;
+  font-size: 25px;
+  width: 70%;
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.imgNoProductsMessageDiv{
+  width: 40%;
+}
+.imgNoProductsMessage{
+  border-top-left-radius: 55px;
+  border-bottom-right-radius:55px;
+}
 
 @media screen  and (max-width:768px){
   
@@ -374,11 +406,7 @@ html body{
   bottom: 0;
   display: flex;
   justify-content: center;
-}
-.leyendFooter{
-  font-family:'Times New Roman', Times, serif ;
-}
-.urlFooter{
-  font-family:'Times New Roman', Times, serif ;
 
 }
+
+

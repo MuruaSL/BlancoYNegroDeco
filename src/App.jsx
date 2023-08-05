@@ -16,7 +16,8 @@ const App = () => {
       image: "../src/assets/articulos/1.png",
       description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam modi excepturi quae totam iure? Pariatur numquam aspernatur eius sunt nulla esse voluptatum, tempora labore magni sapiente impedit itaque eligendi quidem!",
       precio: 999,
-      stock: 4
+      stock: 4,
+      category:7
     },
     {
       id: "2",
@@ -24,7 +25,8 @@ const App = () => {
       image: "../src/assets/articulos/7.png",
       description: "Mantas de corderito doble faz ",
       precio: 777,
-      stock: 6
+      stock: 6,
+      category:1
     },
     {
       id: "3",
@@ -32,7 +34,8 @@ const App = () => {
       image: "../src/assets/articulos/2.png",
       description: "descripcion",
       precio: 888,
-      stock: 5
+      stock: 5,
+      category:5
     },
     {
       id: "4",
@@ -40,7 +43,8 @@ const App = () => {
       image: "../src/assets/articulos/6.png",
       description: "descripcion",
       precio: 777,
-      stock: 6
+      stock: 6,
+      category:5
     },
     {
       id: "5",
@@ -48,7 +52,8 @@ const App = () => {
       image: "../src/assets/articulos/4.png",
       description: "descripcion",
       precio: 999,
-      stock: 4
+      stock: 4,
+      category:5
     },
     {
       id: "6",
@@ -56,7 +61,8 @@ const App = () => {
       image: "../src/assets/articulos/5.png",
       description: "descripcion",
       precio: 999,
-      stock: 4
+      stock: 4,
+      category:5
     },
     {
       id: "7",
@@ -64,7 +70,8 @@ const App = () => {
       image: "../src/assets/articulos/3.png",
       description: "descripcion",
       precio: 777,
-      stock: 6
+      stock: 6,
+      category:5
     },
     {
       id: "8",
@@ -72,7 +79,8 @@ const App = () => {
       image: "../src/assets/articulos/8.png",
       description: "descripcion",
       precio: 777,
-      stock: 6
+      stock: 6,
+      category:1
     },
     {
       id: "9",
@@ -80,7 +88,8 @@ const App = () => {
       image: "../src/assets/articulos/9.png",
       description: " Juego de toalla y toallon de 500gr",
       precio: 777,
-      stock: 6
+      stock: 6,
+      category:6
     },
     {
       id: "10",
@@ -88,7 +97,8 @@ const App = () => {
       image: "../src/assets/articulos/10.png",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam facere hic consectetur, corporis, dolor reprehenderit recusandae incidunt culpa eligendi voluptas magni possimus voluptatibus reiciendis officiis autem placeat mollitia maiores.",
       precio: 777,
-      stock: 6
+      stock: 6,
+      category:4
     },
     {
       id: "11",
@@ -96,7 +106,8 @@ const App = () => {
       image: "../src/assets/articulos/11.png",
       description: "descripcion",
       precio: 777,
-      stock: 6
+      stock: 6,
+      category:4
     },
     {
       id: "12",
@@ -104,7 +115,8 @@ const App = () => {
       image: "../src/assets/articulos/12.png",
       description: "descripcion",
       precio: 777,
-      stock: 6
+      stock: 6,
+      category:1
     }
   ];
 
