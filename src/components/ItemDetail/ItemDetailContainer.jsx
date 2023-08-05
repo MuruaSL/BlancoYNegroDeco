@@ -11,8 +11,8 @@ if (!producto) {
 }
 
 return (
-    <div>
-    <ItemDetail producto={producto} />
+    <div className="itemdetailcontainer">
+    <ItemDetail  producto={producto} />
     </div>
 );
 };

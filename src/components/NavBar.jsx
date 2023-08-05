@@ -10,7 +10,7 @@ return (
 
         <GridItem>
             <Link to={"/"}>
-                <img className="NavbarIcon" src="../src/assets/60x60.png" alt="iconBlancoYnegroDeco"/>
+                <img className="NavbarIcon" src="../src/assets/icon.png" alt="iconBlancoYnegroDeco"/>
             </Link>
         </GridItem>
         

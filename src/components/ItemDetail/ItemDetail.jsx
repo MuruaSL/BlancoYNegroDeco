@@ -7,25 +7,22 @@ const ItemDetail = ({producto}) => {
     const { name, description, precio, image} = producto;
     
 return (
-  
   <>
-    <div className="itemDetailresponsive cardstyles ">
+    <div className="detail_cardstyle">
       <div>
         <h2 className="itemDetailNameDiv">{name}</h2>
       </div>
-      <img className="itemDetailresponsive" src={image} alt="FOTULi ALT" />
+      <div className="itemDetailImg">
+        <img className="imgdetail_css" src={image} alt="FOTULi ALT" />
+      </div>
       <div className="descript_priceDiv">
-          <p className="itemDetailDescriptDiv">{description}</p>
-          <p>Precio: ${precio}</p>
-        </div>
-        <div className="moreOrLessItemsDiv">
-          <button className="addorremovequantity">-</button>
-          <ItemCount/>
-          <button className="addorremovequantity">+</button>
-        </div>
-        <div>
-          <button className="addtocardbutton">Agregar al carrito</button>
-        </div>
+        <p className="itemDetailDescriptDiv">{description}</p>
+        <p>Precio: ${precio}</p>
+      </div>
+      <ItemCount />
+      <div className="AddTocartbuttonDiv">
+        <button className="addtocardbutton">Agregar al carrito</button>
+      </div>
     </div>
   </>
 );

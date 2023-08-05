@@ -1,23 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 html body{
   background-color: #DCCFB1;
+    background-image: url("../src/assets/bg3.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+}
+*{
+  font-family: 'Playfair Display', serif;
 }
 
 
 /* ----------------NavBar Component---------------- */
 
 .header{
-  background-color:#311700;
+  
+  background-color:#e9dfc8;
+  
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
-  color:white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: #000000;
   align-items: center;
-  font-family:cursive;
+  position:sticky;
+  top: 0;
+  height: 100px;
+  width: 100vw;
+}
+.css-1mr00g2{
+  display: grid;
+    grid-template-columns: 1.5fr 1fr 15fr 2fr !important;
 }
 .headerTitle{
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 @media screen  and (max-width:425px){
   
@@ -87,15 +106,10 @@ html body{
 }
 /*------------------------BANNER Component------------------------*/
 .greetingBanner{
-  background-color: #B38A56;
-  color: white;
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  font-family:cursive;
+  background-color: #DDD0B2;
+  color:#5B3509;
   font-size:x-large;
   text-align: center;
-  /* border-radius: 10px;
-  border-color: white; */
-  /* border-width: 1px; */
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
@@ -149,7 +163,6 @@ html body{
 .itemNameDiv{
   border-radius: 10px;
   height: 30px;
-  font-family: 'Times New Roman', Times, serif;
   font-size: x-large;
   display: flex;
   justify-content: center;
@@ -184,7 +197,6 @@ html body{
     transition: all 0.2s ease, visibility 0s;
     border-width: 1px;
     border-color: black;
-
     box-shadow: 2.83px 2.83px 0 #c19361;
     background: #B38A56;
     box-sizing: border-box;
@@ -196,7 +208,6 @@ html body{
     padding: 0;
     touch-action: manipulation;
     width: 60%;
-    font-family:cursive;
     font-size: 15px;
     font-weight: 500;
 }
@@ -218,34 +229,91 @@ html body{
 }
 
 /*------------------------- ItemDetailContainer.jsx--------------------------------*/
-.itemDetailContainerDiv{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
-}
-
+.itemdetailcontainer{display: flex;
+    justify-content: center;}
 
 /*------------------------- ItemDetail.jsx--------------------------------*/
+.detail_cardstyle{
+  background-color: #C7A681;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.itemDetailNameDiv{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 10px;
+}
+.itemDetailImg{
+  width: 70%;
+  border-top-left-radius: 55px;
+  border-bottom-right-radius:55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.imgdetail_css{
+  border-top-left-radius: 55px;
+  border-bottom-right-radius:55px;
+}
+.descript_priceDiv{
+  background-color: #c9b195;
+  border-width: 1px;
+  border-style: dotted;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius:20px;
+  font-size: 20px;
+  width: 70%;
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 .addorremovequantity{
   height: 30px;
-  width: 20%;
+  width: 18%;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  border-width: 2px;
-  border-style:double;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  
 }
 .moreOrLessItemsDiv{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around !important;
   align-items: center;
+  width: 60%;
+  
+}
+.AddTocartbuttonDiv{
+  display: flex;
+  width: 61%;
+  justify-content: center;
 }
 
 .addtocardbutton{ 
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  width: 100%;
   height: 30px;
+  width: 80%;
   margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);

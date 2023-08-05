@@ -7,7 +7,6 @@ import Banner from "./components/Banner";
 import LowResCartButton from "./components/LowResCartButton";
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Item from "./components/Item";
 
 const App = () => {
   const productos = [
@@ -15,7 +14,7 @@ const App = () => {
       id: "1",
       name: "Pantuflas",
       image: "../src/assets/articulos/1.png",
-      description: "descripcion",
+      description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam modi excepturi quae totam iure? Pariatur numquam aspernatur eius sunt nulla esse voluptatum, tempora labore magni sapiente impedit itaque eligendi quidem!",
       precio: 999,
       stock: 4
     },
@@ -38,7 +37,7 @@ const App = () => {
     {
       id: "4",
       name: "Alfombra redonda",
-      image: "src/assets/articulos/6.png",
+      image: "../src/assets/articulos/6.png",
       description: "descripcion",
       precio: 777,
       stock: 6
@@ -46,7 +45,7 @@ const App = () => {
     {
       id: "5",
       name: "Alfombra de telar",
-      image: "src/assets/articulos/4.png",
+      image: "../src/assets/articulos/4.png",
       description: "descripcion",
       precio: 999,
       stock: 4
@@ -54,7 +53,7 @@ const App = () => {
     {
       id: "6",
       name: "Alfombra artesanal ",
-      image: "src/assets/articulos/5.png",
+      image: "../src/assets/articulos/5.png",
       description: "descripcion",
       precio: 999,
       stock: 4
@@ -87,7 +86,7 @@ const App = () => {
       id: "10",
       name: "Cubrecama Flannel",
       image: "../src/assets/articulos/10.png",
-      description: "descripcion",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam facere hic consectetur, corporis, dolor reprehenderit recusandae incidunt culpa eligendi voluptas magni possimus voluptatibus reiciendis officiis autem placeat mollitia maiores.",
       precio: 777,
       stock: 6
     },
@@ -110,6 +109,7 @@ const App = () => {
   ];
 
   return (
+    
     <BrowserRouter>
       <NavBar />
 
