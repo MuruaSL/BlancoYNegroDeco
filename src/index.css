@@ -99,6 +99,46 @@ html body{
     display: none;
   }
 }
+/* ------------------ Home component -------------------*/
+
+.homeFirstDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.homeSecondDiv{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.homeImgCss{
+  width:35vw;
+  margin: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-bottom-left-radius: 55px;
+  border-top-right-radius:55px;
+}
+
+.homeText{
+  background-color: #C7A681;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 60px;
+  border-radius: 20px;
+  height: 400px;
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 30vw;
+}
+
 /* ----------------Categories Component ----------------*/
 .menuItemCss {
   color: black !important;

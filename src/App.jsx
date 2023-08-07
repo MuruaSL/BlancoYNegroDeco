@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import LowResCartButton from "./components/LowResCartButton";
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
 
 const App = () => {
   const productos = [
@@ -30,7 +31,7 @@ const App = () => {
     },
     {
       id: "3",
-      name: "Alfombra rectangulares",
+      name: "Alfombra rectang",
       image: "/src/assets/articulos/2.png",
       description: "descripcion",
       precio: 888,
@@ -128,6 +129,7 @@ const App = () => {
       <Banner />
       <LowResCartButton />
       <Routes>
+        <Route exact path="/home" element={<Home/>}/>;
         <Route exact path="/" element={<ItemListContainer productos={productos} />} />
         <Route exact path="/category/:category" element={<ItemListContainer productos={productos} />} />
         <Route exact path="/item/:id" element={<ItemDetailContainer productos={productos} />} />
