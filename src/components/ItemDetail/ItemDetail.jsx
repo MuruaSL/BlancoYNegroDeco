@@ -9,9 +9,7 @@ const ItemDetail = ({ producto }) => {
   const { addItem, isInCart } = useShoppingCart();
 
   const addToCart = quantity => {
-    if (isInCart(id)) {
       addItem(producto, quantity);
-    }
   };
 
   return (

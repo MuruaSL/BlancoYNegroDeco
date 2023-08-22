@@ -14,7 +14,7 @@ const ItemListContainer = ({ productos }) => {
         setTimeout(()=>{
             
             setLoading(false)
-        },2000)
+        },1200)
     },[])
     if (loading) {
         return (<Loader/>)
