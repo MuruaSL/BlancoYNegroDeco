@@ -6,10 +6,12 @@ import { useShoppingCart } from '../../context/ShoppingCartContext';
 const ItemDetail = ({ producto }) => {
   const { id } = useParams();
   const { name, description, precio, image } = producto;
-  const { cart, setCart } = useShoppingCart();
+  const { addItem, isInCart } = useShoppingCart();
 
-  const addToCart = (quantity) => {
-    setCart([...cart, { ...producto, quantity }]);
+  const addToCart = quantity => {
+    if (isInCart(id)) {
+      addItem(producto, quantity);
+    }
   };
 
   return (
@@ -25,7 +27,7 @@ const ItemDetail = ({ producto }) => {
           <p className="itemDetailDescriptDiv">{description}</p>
           <p>Precio: ${precio}</p>
         </div>
-        <ItemCount addToCart={addToCart} />
+        <ItemCount producto={producto} addToCart={addToCart} />
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import { useShoppingCart } from '../context/ShoppingCartContext';
 
 const CartWidget = () => {
   const { cartLengthForCartWidget } = useShoppingCart();
-
+  console.log('CartWidget renderizado'); // Agrega este console.log
   return (
     <>
       <button className="disp-flex-bag">
