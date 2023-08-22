@@ -8,6 +8,7 @@ import LowResCartButton from "./components/LowResCartButton";
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext"; // Importa ShoppingCartContext por el alias
 
 const App = () => {
   const productos = [
@@ -124,19 +125,23 @@ const App = () => {
   return (
     
     <BrowserRouter>
-      <NavBar />
+    <ShoppingCartProvider>
 
-      <Banner />
-      <LowResCartButton />
-      <Routes>
-        <Route exact path="/home" element={<Home/>}/>;
-        <Route exact path="/" element={<ItemListContainer productos={productos} />} />
-        <Route exact path="/category/:category" element={<ItemListContainer productos={productos} />} />
-        <Route exact path="/item/:id" element={<ItemDetailContainer productos={productos} />} />
-        <Route exact path="/cart" element={<LateralCart />} />
-      </Routes>
+        <NavBar />
+        <Banner />
+        <LowResCartButton />
 
-      <Footer />
+        <Routes>
+          <Route exact path="/home" element={<Home/>}/>;
+          <Route exact path="/" element={<ItemListContainer productos={productos} />} />
+          <Route exact path="/category/:category" element={<ItemListContainer productos={productos} />} />
+          <Route exact path="/item/:id" element={<ItemDetailContainer productos={productos} />} />
+          <Route exact path="/cart" element={<LateralCart />} />
+        </Routes>
+
+        <Footer />
+
+      </ShoppingCartProvider>
     </BrowserRouter>
   );
 };

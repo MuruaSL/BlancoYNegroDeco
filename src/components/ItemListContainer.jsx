@@ -1,10 +1,24 @@
-import React from "react";
 import Item from "./Item";
 import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import Loader from "./reusable/Loader";
+
+
+
 
 const ItemListContainer = ({ productos }) => {
     const { category } = useParams();
-    console.log(category);
+
+    const [loading, setLoading] = useState(true)
+    useEffect(()=>{
+        setTimeout(()=>{
+            
+            setLoading(false)
+        },2000)
+    },[])
+    if (loading) {
+        return (<Loader/>)
+    }
 
     if (productos.length === 0) {
         return <p>Ha ocurrido un error inesperado</p>;
@@ -19,6 +33,7 @@ const ItemListContainer = ({ productos }) => {
     const filtered_array = categoryNumber
         ? productos.filter((producto) => producto.category === categoryNumber)
         : productos;
+
     if (filtered_array.length === 0) {
         return (
             <div className="NoProductsMessageDiv">  
@@ -43,4 +58,6 @@ const ItemListContainer = ({ productos }) => {
     );
 };
 
-export default ItemListContainer;
+
+
+export default React.memo(ItemListContainer);
