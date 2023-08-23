@@ -9,7 +9,7 @@ return (
     <Grid templateColumns='1fr 1fr 15fr 2fr'  className="header">
 
         <GridItem>
-            <Link to={"/"}>
+            <Link to={"/Home"}>
                 <img className="NavbarIcon" src="../src/assets/icon.png" alt="iconBlancoYnegroDeco"/>
             </Link>
         </GridItem>

@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
-import LateralCart from "./components/LateralCart";
+import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import LowResCartButton from "./components/LowResCartButton";
@@ -9,7 +9,7 @@ import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext"; // Importa ShoppingCartContext por el alias
-
+import Checkout from "./components/Checkout";
 const App = () => {
   const productos = [
     {
@@ -136,7 +136,8 @@ const App = () => {
           <Route exact path="/" element={<ItemListContainer productos={productos} />} />
           <Route exact path="/category/:category" element={<ItemListContainer productos={productos} />} />
           <Route exact path="/item/:id" element={<ItemDetailContainer productos={productos} />} />
-          <Route exact path="/cart" element={<LateralCart />} />
+          <Route exact path="/cart" element={<Cart />} />
+          <Route exact path="/checkout" element={<Checkout />} />
         </Routes>
 
         <Footer />

@@ -78,6 +78,35 @@ html body{
     display: none;
   }
 }
+/*------------------HOME Component*-----------------------*/
+.home_button{
+  
+  transition: all 0.2s ease, visibility 0s;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 2.83px 2.83px 0 #c19361;
+    background: #B38A56;
+    cursor: pointer;
+    min-height: 10px;
+    min-width: 10px;
+    padding: 0;
+    touch-action: manipulation;
+    font-size: 15px;
+    font-weight: 500;
+    width: 30vw;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+.home_button:hover{
+  box-shadow: 3px 3px 0 #5B3509;
+}
+.home_button_div{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  justify-items: center;
+}
 
 /*------------------LowResCartButton comp-----------------*/
 
@@ -409,39 +438,94 @@ html body{
 /*------------------------- ItemCount.jsx--------------------------------*/
 
 
-/* ----------------LateralCart Component ----------------*/
+/* ----------------Cart Component ----------------*/
 
-.AsideCss{
-  /* background-color: bisque; */
-  padding: 10px;
+.cartContainer{
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  box-sizing: border-box;
-}
-/* .closeIcon{
-  float: right;
-  margin: 10px;
+  align-items: center;
+  padding: 25px;
   
-} */
-.sideCartTitle{
-  font-size: 25px;
+}
+.cartTitle{
+  font-size: 30px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
-.sideCartText{
+.CartItemContainer{
+  max-width: 50vw;
+  border-width: 1px;
+  margin-bottom: 20px;
+  box-shadow: 2.83px 2.83px 0 #c19361;
+  border-color: black;
+  background: #B38A56;
   font-size: 20px;
-}
-.lateralButton{
-  background-color: grey;
-  border-radius: 5px;
-  border-width: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  font-weight: 500;
   color: white;
-  width: 300px;
+  
 }
-.div-buttonGrouplateralCart{
+.cartItemImg{
+  max-height: 100%;
+  padding: 5px;
+}
+
+.CartItemCard{
+  display: grid;
+grid-template-columns: 1fr 0.5fr repeat(2, 1fr) 0.5fr;
+grid-template-rows: repeat(3, 0.5fr) ;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+}
+.CartItemdiv1 { grid-area: 1 / 5 / 2 / 6; 
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+.CartItemdiv2 { grid-area: 3 / 3 / 4 / 6; 
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  align-items: center;
+}
+.CartItemdiv3 { 
+  grid-area: 2 / 3 / 3 / 5; 
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.CartItemdiv4 { grid-area: 2 / 5 / 3 / 6; 
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+.CartItemdiv5 { grid-area: 1 / 3 / 2 / 5; 
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+.CartItemdiv6 { grid-area: 1 / 1 / 4 / 3; }
+
+.cartButton{
+  transition: all 0.2s ease, visibility 0s;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 2.83px 2.83px 0 #c19361;
+    background: #B38A56;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    min-height: 10px;
+    min-width: 10px;
+    padding: 0;
+    touch-action: manipulation;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.cartButton:hover{
+  box-shadow: 3px 3px 0 #5B3509;
+}
+.div-buttonGroupCart{
 
   margin-top: 5px;
   display: grid;
@@ -449,6 +533,7 @@ html body{
   flex-direction: center;
   grid-template-columns: 3;
 }
+
 /* ----------------Footer Component---------------- */
 
 .footerbar{
