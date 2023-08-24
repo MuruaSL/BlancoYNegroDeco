@@ -6,7 +6,7 @@ import { useShoppingCart } from '../../context/ShoppingCartContext';
 const ItemDetail = ({ producto }) => {
   const { id } = useParams();
   const { name, description, precio, image } = producto;
-  const { addItem, isInCart } = useShoppingCart();
+  const { addItem } = useShoppingCart();
 
   const addToCart = quantity => {
       addItem(producto, quantity);

@@ -1,9 +1,11 @@
 import React from 'react'
+import Form from '../components/Form'
 
 const Checkout = () => {
   return (
-    <div>Checkout</div>
+    <Form/>
   )
 }
 
 export default Checkout
+

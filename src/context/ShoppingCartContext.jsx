@@ -6,6 +6,8 @@ export const ShoppingCartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const cartLength = cart.length;
     const cartLengthForCartWidget=cart.reduce((total, item) => total + item.quantity, 0);
+    const cartTotal = cart.reduce((total,item)=> total + (item.precio * item.quantity),0) ;    
+
 
     ///Funciones
 
@@ -40,7 +42,7 @@ export const ShoppingCartProvider = ({ children }) => {
     
 
     return (
-        <ShoppingCartContext.Provider value={{ cart, setCart, cartLength, cartLengthForCartWidget, addItem,removeItem,clearCart,isInCart }}>
+        <ShoppingCartContext.Provider value={{ cart, setCart, cartLength, cartLengthForCartWidget,cartTotal,addItem,removeItem,clearCart,isInCart }}>
         {children}
         </ShoppingCartContext.Provider>
     );
