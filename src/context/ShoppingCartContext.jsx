@@ -32,6 +32,39 @@ export const ShoppingCartProvider = ({ children }) => {
         setCart(updatedCart);
     };
     
+    // DECREMENTAR EN 1 EL VALOR DE LA CANTIDAD DE PRODUCTOS EN CARRITO
+    const incrementQuantity = productId => {
+        const updatedCart = cart.map(item => {
+            if (item.id === productId) {
+                // Si existe producto: -1 a su cantidad
+                if (item.quantity > 1){
+                    return { ...item, quantity: item.quantity + 1 };
+                }
+            }
+            return item;
+            });
+            setCart(updatedCart);
+        };
+
+    // DECREMENTAR EN 1 EL VALOR DE LA CANTIDAD DE PRODUCTOS EN CARRITO
+    const decrementQuantity = productId => {
+        const updatedCart = cart.map(item => {
+            if (item.id === productId) {
+                // Si existe producto: -1 a su cantidad
+                if (item.quantity > 1){
+                    return { ...item, quantity: item.quantity - 1 };
+                }
+                else{
+                    return null
+                }
+            }
+            return item;
+            });
+            const filteredCart = updatedCart.filter(item => item !== null); // Filtra los elementos nulos
+            setCart(filteredCart);
+        };
+        
+
     // VACIAR EL CARRITO
     const clearCart = () => {
         setCart([]);
@@ -42,7 +75,7 @@ export const ShoppingCartProvider = ({ children }) => {
     
 
     return (
-        <ShoppingCartContext.Provider value={{ cart, setCart, cartLength, cartLengthForCartWidget,cartTotal,addItem,removeItem,clearCart,isInCart }}>
+        <ShoppingCartContext.Provider value={{ cart, setCart, cartLength, cartLengthForCartWidget,cartTotal,addItem,removeItem,clearCart,isInCart,decrementQuantity,incrementQuantity }}>
         {children}
         </ShoppingCartContext.Provider>
     );
