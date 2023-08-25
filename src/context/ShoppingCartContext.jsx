@@ -32,12 +32,12 @@ export const ShoppingCartProvider = ({ children }) => {
         setCart(updatedCart);
     };
     
-    // DECREMENTAR EN 1 EL VALOR DE LA CANTIDAD DE PRODUCTOS EN CARRITO
+    // INCREMENTAR EN 1 EL VALOR DE LA CANTIDAD DE PRODUCTOS EN CARRITO
     const incrementQuantity = productId => {
         const updatedCart = cart.map(item => {
             if (item.id === productId) {
-                // Si existe producto: -1 a su cantidad
-                if (item.quantity > 1){
+                // Si existe producto: en carrito +1 a su cantidad
+                if (item.quantity > 0){
                     return { ...item, quantity: item.quantity + 1 };
                 }
             }

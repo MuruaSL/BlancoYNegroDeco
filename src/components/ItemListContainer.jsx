@@ -3,9 +3,6 @@ import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Loader from "./reusable/Loader";
 
-
-
-
 const ItemListContainer = ({ productos }) => {
     const { category } = useParams();
 

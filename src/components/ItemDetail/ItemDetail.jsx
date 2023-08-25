@@ -1,10 +1,8 @@
 import React from 'react';
 import ItemCount from './ItemCount';
-import { useParams } from 'react-router-dom';
 import { useShoppingCart } from '../../context/ShoppingCartContext';
 
 const ItemDetail = ({ producto }) => {
-  const { id } = useParams();
   const { name, description, precio, image } = producto;
   const { addItem } = useShoppingCart();
 
