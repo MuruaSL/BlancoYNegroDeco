@@ -570,6 +570,77 @@ grid-row-gap: 0px;
   margin-right: 20px;
 }
 
+/* ----------------Form Component---------------- */
+.formContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 63px;
+  margin-bottom: 100px;
+}
+.form{
+  width:340px;
+  height:540px;
+  background:#e6e6e6;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formTitle{
+  font-size: 3vh;
+  margin-bottom: 15px;
+}
+.formInputs{
+  margin: 5px;
+  border-color: #adaaaa;
+  border-radius: 5px;
+  border-width: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.formSpan{
+  
+  background-color: #B38A56;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
+  box-shadow: 2.83px 2.83px 0 #c19361;
+}
+.FormspanContainer{
+  margin-top: 35px;
+  
+}
+
+.formSubmitButton{
+  background-color: #B38A56;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
+  box-shadow: 2.83px 2.83px 0 #c19361;
+}
+.formSubmitButton:hover{
+  box-shadow: 3px 3px 0 #5B3509;
+}
+.OrderIdP{
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
+  box-shadow: 2.83px 2.83px 0 #c19361;
+
+}
 /* ----------------Footer Component---------------- */
 
 .footerbar{
