@@ -11,32 +11,31 @@ const Form = () => {
   const [phone, setPhone] = useState(null);
   const [message, setMessage] = useState("");
   const { cartTotal } = useShoppingCart();
-  const [orderId, setOrderId] = useState("Aun no completo su pedido")
-  const db = getFirestore()
-  const handleSubmit = (e)=> {
-    e.preventDefault()
-    addDoc(orderCollection, order).then(({id})=>
-    setOrderId(id));
-    clearCart();
-    Swal.fire(
-      'Recibimos tu pedido!',
-      'A la brevedad te contactaremos',
-      'success'
-    )
-  }
-  
+  const [orderId, setOrderId] = useState("Aun no completo su pedido");
+  const db = getFirestore();
+  const orderCollection = collection(db,"order")
   const order = {
     name,
     phone,
     email,
     message,
     cart,
-    cartTotal,
-    orderId
+    cartTotal
   }
 
-  const orderCollection = collection(db,"order")
-
+  const handleSubmit = (e) => {
+    Swal.fire(
+      'Recibimos tu pedido!',
+      'Te contactaremos a la brevedad!',
+      'success'
+    );
+    e.preventDefault();
+  
+    addDoc(orderCollection, order).then(({ id }) => {
+      setOrderId(id); 
+      clearCart();
+    });
+  }
   return (
     <>
       
