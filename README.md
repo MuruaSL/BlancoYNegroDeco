@@ -1,5 +1,4 @@
-# PreEntraga1-Murua
-Blanco&NegroDeco
+#Blanco&NegroDeco
 
 Pagina dedicada a un micro emprendimiento, que se dedica a la venta de blanqueria y ropa de cama.
 
