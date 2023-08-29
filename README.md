@@ -13,7 +13,7 @@ CSS
 ChackraUI
 
 Video de la funcionalidad: 
-https://www.loom.com/share/6ffe2fb507f74acb95663eab9ac5b359
+https://www.loom.com/share/790ea8327c5642c6bbbdea6a3f25e813?sid=2855aae1-22db-4975-abf2-b710da066eb4
 
 Autores ✒️
 Murua Sergio Leonardo - Trabajo Inicial, ocumentación, resto del proyecto -
